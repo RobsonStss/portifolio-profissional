@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media (min-width: 1440px) {
+
+    :root {
+        --cor-de-fundo1: #F5F5F5;
+        --cor-de-fundo2: blue;
+        --cor-rodape: EAF2FD;
+        --cor-fonte: black;
+    }
+
+    /* menu */
+
+    body {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        background-color: var(--cor-de-fundo1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+
+    .menu__secao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        gap: 32px;
+    }
+    
+    .menu__guia {
+        text-decoration: none;
+        color: var(--cor-fonte);
+    }
+
+    /* apresentacao  */
+
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        padding: 52px 40px;
+    }
+
+    .main__apresentacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 24px;
+        padding: 100px;
+    }
+
+    .apresentacao__conteudo {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 24px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 52px;
+    }
+
+    .apresentacao__paragrafo {
+        font-size: 22px;
+    }
+
+    .apresentacao__links {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 24px;
+        gap: 32px;
+    }
+
+    .links__redes {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        color: var(--cor-fonte);
+    }
+
+    .main__imagem {
+        height: 368px;
+        width: 368px;
+        border-radius: 50%;
+    }
+
+    /* rodape  */
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--cor-rodape);
+}
+
+    /* sobre mim  */
+
+    .main__sobre {
+        padding: 250px 152px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-de-fundo2);
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    /* skills e hobbies */
+
+    .skills__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 90px;
+        padding: 200px;
+        background-color: var(--cor-de-fundo1);
+    }
+
+    .skills__secao {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .skills__habilidades {
+        width: 176px;
+        height: 174px;
+        background-color: var(--cor-de-fundo2);
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+
+}
+
