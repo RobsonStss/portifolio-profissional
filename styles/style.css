@@ -178,8 +178,49 @@
         background-color: blue;
         align-items: center;
         font-size: 16px;
-        
+        gap: 8px;
     }
+
+    /* hobbies  */
+
+    .main__hobbies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 36vw;
+        gap: 24px;
+        padding: 100px;
+        background-color: var(--cor-de-fundo1);
+    }
+
+    .hobbies__titulo {
+        font-size: var(--size-titulo);
+    }
+
+    .hobbies {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .hobbies__quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 176px;
+        height: 174px;
+        background-color: blue;
+        align-items: center;
+        font-size: 16px;
+        gap: 8px;
+    }
+
 
 
 
