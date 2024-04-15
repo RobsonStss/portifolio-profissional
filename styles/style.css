@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -10,10 +10,11 @@
 
     :root {
         --cor-de-fundo1: #F5F5F5;
-        --cor-de-fundo2: #EAF2FD;
-        --cor-rodape: EAF2FD;
+        --cor-de-fundo2: /*#EAF2FD */blue;
+        --cor-rodape: red;
         --cor-fonte: black;
-        --font: "Raleway", sans-serif;
+        --size-titulo: 32px;
+        --font: "Roboto", sans-serif;
     }
 
     /* menu */
@@ -69,9 +70,9 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 30vw;
+        height: 37vw;
         gap: 24px;
-        padding: 100px;
+        padding: 32px 100px;
     }
 
     .apresentacao__conteudo {
@@ -115,11 +116,11 @@
     .main__sobre {
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         width: 100%;
-        height: 30vw;
+        height: 37vw;
         gap: 24px;
-        padding: 75px;
+        padding: 100px;
         background-color: var(--cor-de-fundo2);
     }
 
@@ -127,18 +128,62 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0px 55px;
+        padding: 0px 82px;
         gap: 52px;
     }
 
     .sobre__titulo {
-        font-size: 32px;
+        font-size: var(--size-titulo);
         font-family: var();
     }
 
     .sobre__paragrafo {
         font-size: 16px;
     }
+
+    /* skills */
+
+    .main__skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 36vw;
+        gap: 24px;
+        padding: 100px;
+        background-color: var(--cor-de-fundo1);
+    }
+
+    .skills__titulo {
+        font-size: var(--size-titulo);
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .skills__quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 176px;
+        height: 174px;
+        background-color: blue;
+        align-items: center;
+        font-size: 16px;
+        
+    }
+
+
+
+
 
     /* rodape  */
 
