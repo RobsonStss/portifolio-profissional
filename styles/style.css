@@ -10,15 +10,16 @@
 
     :root {
         --cor-de-fundo1: #F5F5F5;
-        --cor-de-fundo2: blue;
+        --cor-de-fundo2: #EAF2FD;
         --cor-rodape: EAF2FD;
         --cor-fonte: black;
+        --font: "Raleway", sans-serif;
     }
 
     /* menu */
 
     body {
-        font-family: "Raleway", sans-serif;
+        font-family: var(--font);
         font-weight: 400;
         background-color: var(--cor-de-fundo1);
         display: flex;
@@ -30,6 +31,9 @@
         align-items: center;
         justify-content: space-around;
         font-size: 16px;
+        /* position: fixed;
+        top: 0; */
+        width: 100%;
     }
 
     .menu__secao {
@@ -45,23 +49,27 @@
         color: var(--cor-fonte);
     }
 
-    /* apresentacao  */
+    /* main  */
 
     .main {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        gap: 17px;
+        gap: 6px;
+        height: 100%;
         padding: 52px 40px;
+        overflow: hidden;
     }
+
+    /* apresentacao */
 
     .main__apresentacao {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 30vw;
         gap: 24px;
         padding: 100px;
     }
@@ -69,7 +77,7 @@
     .apresentacao__conteudo {
         display: flex;
         flex-flow: column wrap;
-        gap: 24px;
+        gap: 32px;
     }
 
     .apresentacao__titulo {
@@ -102,9 +110,39 @@
         border-radius: 50%;
     }
 
+    /* sobre mim  */
+
+    .main__sobre {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: 30vw;
+        gap: 24px;
+        padding: 75px;
+        background-color: var(--cor-de-fundo2);
+    }
+
+    .sobre__conteudo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 55px;
+        gap: 52px;
+    }
+
+    .sobre__titulo {
+        font-size: 32px;
+        font-family: var();
+    }
+
+    .sobre__paragrafo {
+        font-size: 16px;
+    }
+
     /* rodape  */
 
-.rodape {
+    .rodape {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -115,60 +153,6 @@
     justify-content: center;
     gap: 10px;
     background-color: var(--cor-rodape);
-}
-
-    /* sobre mim  */
-
-    .main__sobre {
-        padding: 250px 152px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--cor-de-fundo2);
-    }
-
-    .sobre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    /* skills e hobbies */
-
-    .skills__titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 32px;
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 90px;
-        padding: 200px;
-        background-color: var(--cor-de-fundo1);
-    }
-
-    .skills__secao {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .skills__habilidades {
-        width: 176px;
-        height: 174px;
-        background-color: var(--cor-de-fundo2);
-        gap: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
     }
 
 
