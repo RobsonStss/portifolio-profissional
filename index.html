@@ -10,7 +10,7 @@
     <header class="menu">
         <p>
             <img src="./assets/trabalhando-no-pc.png" alt="icone de uma pessoa no computador">
-            <strong>Robson Santos</strong></p>
+            <strong><a class="menu__paragrago" href="#main__apresentacao">Robson Santos</a></strong></p>
         <nav class="menu__secao">
             <a class="menu__guia" href="#main__sobre">Sobre mim</a>
             <a class="menu__guia" href="#main__skills">Skills</a>
@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main class="main">
-        <section class="main__apresentacao">
+        <section class="main__apresentacao" id="main__apresentacao">
             <div class="apresentacao__conteudo">
                 <h1 class="apresentacao__titulo">Olá! meu nome é Robson <br>sou desenvolvedor Web Front End</h1>
                 <p class="apresentacao__paragrafo">Estou cursando curso técnico em informática e atualmente estou <br>participando do projeto Oracle ONE Alura</p>
@@ -54,7 +54,7 @@
             <div>
                 <h1 class="skills__titulo">Skills</h1>
             </div>
-            <div class="skills">
+            <div class="skills__conteudo">
                 <div class="skills__quadrados"><img src="./assets/js.png" alt="icone do JavaScript"><strong>JavaScript</strong></div>
                 <div class="skills__quadrados"><img src="./assets/html-5.png" alt="icone do HTML5"><strong>HTML5</strong></div>
                 <div class="skills__quadrados"><img src="./assets/css-3.png" alt="icone do CSS3"><strong>CSS3</strong></div>
@@ -106,8 +106,8 @@
             <div class="projetos__conteudo">
                 <img class="projetos__imagem" src="./assets/challenge-codificador.png" alt="">
                 <div class="projetos__descricao">
-                    <h2>Codificador</h2>
-                    <p>challenge codificador</p>
+                    <h2 class="projetos__subtitulos">Codificador</h2>
+                    <p class="projetos__paragrafo">challenge codificador</p>
                     <div class="projetos__links">
                         <a href="https://github.com/RobsonStss/Codificador" target="_blank"><button class="links__botao">Repositório</button></a>
                         <a href="https://robsonstss.github.io/Codificador/"target="_blank"><button class="links__botao">Ver demo</button></a>
@@ -120,11 +120,11 @@
             <div class="formulario__imagem">
                 <img src="./assets/contato.png" alt="foto de um telefone">
             </div>
-            <div class="formulario__titulo">
-                <h1>Contato</h1>
-                <p>Quer entrar em contato comigo?<br>
+            <div class="formulario__conteudo">
+                <h1 class="formulario__titulo">Contato</h1>
+                <p class="formulario__paragrafo">Quer entrar em contato comigo?<br>
                     Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-                <div class="formulario__">
+                <div class="formulario">
                     <form class="formulario__entrada">
                         <label for="nome">Nome</label>
                         <input class="formulario__input" type="text">
