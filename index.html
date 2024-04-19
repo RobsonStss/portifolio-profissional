@@ -8,30 +8,36 @@
 </head>
 <body>
     <header class="menu">
-        <p>
-            <img src="./assets/trabalhando-no-pc.png" alt="icone de uma pessoa no computador">
-            <strong><a class="menu__paragrago" href="#main__apresentacao">Robson Santos</a></strong></p>
-        <nav class="menu__secao">
-            <a class="menu__guia" href="#main__sobre">Sobre mim</a>
-            <a class="menu__guia" href="#main__skills">Skills</a>
-            <a class="menu__guia" href="#main__hobbies">Hobbies</a>
-            <a class="menu__guia" href="#main__formacao">Formação</a>
-            <a class="menu__guia" href="#main__projetos">Projetos</a>
-            <a class="menu__guia"href="#main__formulario"><strong>robsonsantos.1j@gmail.com</strong></a>
+
+        <nav class="menu__navegacao">
+            <div class="menu__nome">
+                <a class="menu__paragrago" href="#main__apresentacao"> <img class="menu__imagem" src="./assets/trabalhando-no-pc.png" alt="icone de uma pessoa no computador"></a>
+                <a class="menu__paragrago" href="#main__apresentacao"><strong>Robson Santos</strong></a>
+            </div>
+            <div class="menu__secao">
+                <a class="menu__guia" href="#main__sobre">Sobre mim</a>
+                <a class="menu__guia" href="#main__skills">Skills</a>
+                <a class="menu__guia" href="#main__hobbies">Hobbies</a>
+                <a class="menu__guia" href="#main__formacao">Formação</a>
+                <a class="menu__guia" href="#main__projetos">Projetos</a>
+                <a class="menu__guia"href="#main__formulario"><strong>robsonsantos.1j@gmail.com</strong></a>
+            </div>
         </nav>
+
     </header>
+
     <main class="main">
         <section class="main__apresentacao" id="main__apresentacao">
             <div class="apresentacao__conteudo">
                 <h1 class="apresentacao__titulo">Olá! meu nome é Robson <br>sou desenvolvedor Web Front End</h1>
-                <p class="apresentacao__paragrafo">Estou cursando curso técnico em informática e atualmente estou <br>participando do projeto Oracle ONE Alura</p>
+                <p class="apresentacao__paragrafo">Estou cursando curso técnico em informática e atualmente estou participando do projeto Oracle ONE Alura</p>
                 <div class="apresentacao__links">
                     <a class="links__redes" href="https://www.linkedin.com/in/joserobsonsantos/" target="_blank">
                         Linkedin
-                        <img src="./assets/linkedin.png" alt="logo do linkedin"></a>
+                        <img class="links__imagem" src="./assets/linkedin.png" alt="logo do linkedin"></a>
                     <a class="links__redes" href="https://github.com/RobsonStss" target="_blank">
                         GitHub
-                        <img src="./assets/github.png" alt="logo do github"></a>
+                        <img class="links__imagem" src="./assets/github.png" alt="logo do github"></a>
                 </div>
             </div>
             <div> 
@@ -55,11 +61,11 @@
                 <h1 class="skills__titulo">Skills</h1>
             </div>
             <div class="skills__conteudo">
-                <div class="skills__quadrados"><img src="./assets/js.png" alt="icone do JavaScript"><strong>JavaScript</strong></div>
-                <div class="skills__quadrados"><img src="./assets/html-5.png" alt="icone do HTML5"><strong>HTML5</strong></div>
-                <div class="skills__quadrados"><img src="./assets/css-3.png" alt="icone do CSS3"><strong>CSS3</strong></div>
-                <div class="skills__quadrados"><img src="./assets/commit-git.png" alt="icone do git"><strong>Git</strong></div>
-                <div class="skills__quadrados"><img src="./assets/github.png" alt="icone do github"><strong>Github</strong></div>
+                <div class="skills__quadrados"><img class="quadrados__imagem" src="./assets/js.png" alt="icone do JavaScript"><strong>JavaScript</strong></div>
+                <div class="skills__quadrados"><img class="quadrados__imagem" src="./assets/html-5.png" alt="icone do HTML5"><strong>HTML5</strong></div>
+                <div class="skills__quadrados"><img class="quadrados__imagem" src="./assets/css-3.png" alt="icone do CSS3"><strong>CSS3</strong></div>
+                <div class="skills__quadrados"><img class="quadrados__imagem" src="./assets/commit-git.png" alt="icone do git"><strong>Git</strong></div>
+                <div class="skills__quadrados"><img class="quadrados__imagem" src="./assets/github.png" alt="icone do github"><strong>Github</strong></div>
             </div>
         </section>
 
@@ -79,7 +85,23 @@
             <div>
                 <h1 class="formacao__titulo">Formação</h1>
             </div>
-            <div class="formacao">
+            <div class="formacao__conteudo">
+                <div class="formacao__quadrados">
+                    <img src="./assets/logo-escola.png" alt="logo da escola" class="formacao__imagem">
+                    <div class="formacao__descricao">
+                        <h2 class="formacao__subtitulo">Técnico em informática</h2>
+                        <p class="formacao__paragrafo">Em andamento</p>
+                    </div>
+                </div>
+                <div class="formacao__quadrados">
+                    <img src="./assets/logo-alura.png" alt="logo da escola" class="formacao__imagem">
+                    <div class="formacao__descricao">
+                        <h2 class="formacao__subtitulo">Formação Front End - Alura</h2>
+                        <p class="formacao__paragrafo">Em andamento</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="formacao">
                 <div class="formacao__quadrados">
                     <div class="formacao__imagens">
                         <img class="formacao__imagens" src="./assets/logo-escola.png" alt="logo da escola">
@@ -96,7 +118,7 @@
                         <h2 class="formacao__subtitulo">Desenvolvedor Front End</h2>
                         <p class="formacao__paragrafo">Em andamento</p>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="main__projetos" id="main__projetos">
@@ -107,7 +129,7 @@
                 <img class="projetos__imagem" src="./assets/challenge-codificador.png" alt="">
                 <div class="projetos__descricao">
                     <h2 class="projetos__subtitulos">Codificador</h2>
-                    <p class="projetos__paragrafo">challenge codificador</p>
+                    <p class="projetos__paragrafo">Challenge codificador</p>
                     <div class="projetos__links">
                         <a href="https://github.com/RobsonStss/Codificador" target="_blank"><button class="links__botao">Repositório</button></a>
                         <a href="https://robsonstss.github.io/Codificador/"target="_blank"><button class="links__botao">Ver demo</button></a>
@@ -121,11 +143,13 @@
                 <img src="./assets/contato.png" alt="foto de um telefone">
             </div>
             <div class="formulario__conteudo">
-                <h1 class="formulario__titulo">Contato</h1>
-                <p class="formulario__paragrafo">Quer entrar em contato comigo?<br>
-                    Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                 <div class="formulario">
                     <form class="formulario__entrada">
+                        <div class="conteudo__descricao">
+                        <h1 class="formulario__titulo">Contato</h1>
+                        <p class="formulario__paragrafo">Quer entrar em contato comigo?<br>
+                        Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                        </div>
                         <label for="nome">Nome</label>
                         <input class="formulario__input" type="text">
                         <label for="e-mail">E-mail</label>
