@@ -462,11 +462,13 @@ body {
 }
 
 
+@media (min-width: 834px) {
+    
+}
 
 
 
-
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
     /* menu */
 
@@ -892,7 +894,7 @@ body {
     }
 
     .formulario__textare {
-        width: 35.31rem;
+        width: 33.75rem;
         height: 6.25rem;
         border: 0.13rem solid var(--cor-borda);
         border-radius: 0.63rem;
