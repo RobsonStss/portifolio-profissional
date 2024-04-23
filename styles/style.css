@@ -104,7 +104,7 @@ body {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        background-color: var(--cor-secundaria);
+        /* background-color: var(--cor-secundaria); */
     }
 
     /* apresentacao */
@@ -114,7 +114,7 @@ body {
         flex-direction: column-reverse;
         justify-content: space-around;
         width: 100%;
-        height: 320px;
+        height: 50vh;
         padding: 10px;
         gap: 16px;
         background-color: var(--cor-secundaria);
@@ -169,8 +169,8 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 90%;
-        height: 320px;
+        width: 99%;
+        height: 50vh;
         padding: 10px;
         background-color: var(--cor-secundaria);
     }
@@ -458,7 +458,7 @@ body {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1024px) {
 
     /* menu */
 
@@ -492,18 +492,10 @@ body {
         font-size: 22px;
     }
 
-    /* .menu__paragrago {
-        font-size: 22px;
-    } */
-
     .menu__imagem {
         width: 32px;
         height: 32px;
     }
-
-    /* .menu__guia {
-        font-size: 32px;
-    } */
 
     .menu__paragrago, .menu__guia {
         text-decoration: none;
@@ -523,7 +515,6 @@ body {
     .main {
         display: flex;
         flex-direction: column;
-        /* overflow: hidden; */
         width: 100%;
         height: 100%;
     }
@@ -537,7 +528,7 @@ body {
        align-items: center;
        gap: 16px;
        width: 100%;
-       height: 40vw;
+       height: 40vh;
        background-color: var(--cor-primaria);
     }
 
@@ -596,7 +587,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 60vw;
+        height: 50vh;
         background-color: var(--cor-primaria);
     }
 
@@ -616,7 +607,7 @@ body {
         align-items: center;
         gap: 32px;
         width: 100%;
-        height: 60vw;
+        height: 70vh;
         background-color: var(--cor-secundaria);
     }
 
@@ -656,8 +647,8 @@ body {
         align-items: center;
         gap: 32px;
         width: 100%;
-        height: 50vw;
-        background-color: var(--cor-secundaria);
+        height: 70vh;
+        background-color: var(--cor-primaria);
     }
 
     .hobbies__titulo {
@@ -691,8 +682,8 @@ body {
         align-items: center;
         gap: 32px;
         width: 100%;
-        height: 50vw;
-        background-color: var(--cor-primaria);
+        height: 70vh;
+        background-color: var(--cor-secundaria);
     }
 
     .formacao__titulo {
@@ -703,8 +694,8 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 8px;
-        font-size: 16px;
+        gap: 16px;
+        /* font-size: 16px; */
     }
 
     .formacao__quadrados {
@@ -713,25 +704,153 @@ body {
         justify-content: center;
         align-items: center;
         gap: 2.5px;
-        width: 224px;
+        width: 240px;
         height: 118px;
         background-color: var(--cor-quadrado);
     }
 
     .formacao__imagem {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 48px;
+    }
+
+    .formacao__subtitulo {
+        font-size: 16px;
+    }
+
+    .formacao__paragrafo {
+        font-size: 14px;
+    }
+
+    /* projetos tablet  */
+
+    .main__projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        height: 90vh;
+        background-color: var(--cor-primaria);
+    }
+
+    .projetos__titulos {
+        font-size: 22px;
+    }
+
+    .projetos__conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .projetos__descricao {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .projetos__subtitulos {
+        font-size: 16px;
+    }
+
+    .projetos__paragrafo {
+        font-size: 14px;
+    }
+
+    .projetos__links {
+        display: flex;
+        gap: 8px;
+    }
+
+    .links__botao {
+        width: 108px;
+        height: 40px;
+        background-color: var(--cor-quadrado);
     }
 
     .projetos__imagem {
-        width: 146px;
-        height: 146px;
+        width: 550px;
+        height: 350px;
     }
+
+    /* formulario tablet  */
+
+    .main__formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 16px 0px; */
+        width: 100%;
+        height: 90vh;
+        padding: 16px 0px;
+        gap: 16px;
+        background-color: var(--cor-secundaria);
+    }
+
+    .formulario__conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0rem 1.2rem;
+        gap: 16px;
+    }
+
+    .conteudo__descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: start; */
+        width: 100%;
+        gap: 16px;
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .formulario__entrada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 16px;
+        gap: 16px;
+    }
+
+    .formulario__input {
+        /* border: 2px s; */
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .formulario__textare {
+        border: 2px solid var(--cor-borda);
+        border-radius: 5px;
+        width: 100%;
+        height: 60px;
+    }
+
+    .formulario__botao {
+        border: 2px solid var(--cor-borda);
+        border-radius: 5px;
+        width: 151px;
+        height: 40px;
+    }
+
+    .formulario__imagem {
+        display: none;
+    }
+
 }
 
-
-
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
 
     /* menu */
 
@@ -788,9 +907,7 @@ body {
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        /* gap: 6px; */
         height: 100%;
-        /* padding: 52px 40px; */
         overflow: hidden;
         background-color: var(--cor-primaria);
     }
@@ -802,7 +919,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 47vw;
+        height: 85vh;
         gap: 1.5rem;
         padding: 2rem 6.25rem;
         color: var(--cor-fonte);
@@ -839,6 +956,7 @@ body {
         display: flex;
         align-items: center;
         gap: 0.25rem;
+        font-size: 1rem;
         text-decoration: none;
         color: var(--cor-fonte);
     }
@@ -856,7 +974,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 37vw;
+        height: 70vh;
         gap: 1.5rem;
         padding: 6.25rem;
         background-color: var(--cor-secundaria);
@@ -888,10 +1006,10 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 37vw;
+        height: 67vh;
         gap: 1.5rem;
         padding: 6.25rem;
-        background-color: var(--cor-primaria);
+        background-color: var(--cor-secundaria);
         color: var(--cor-fonte);
     }
 
@@ -929,7 +1047,7 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 37vw;
+        height: 67vh;
         gap: 1.5rem;
         padding: 6.25rem;
         background-color: var(--cor-primaria);
@@ -970,7 +1088,7 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 37vw;
+        height: 67vh;
         gap: 1.5rem;
         padding: 6.25rem;
         background-color: var(--cor-secundaria);
@@ -1034,9 +1152,9 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 37vw;
+        height: 67vh;
         gap: 1rem;
-        padding: 6.25rem;
+        padding: 8.25rem;
         background-color: var(--cor-primaria);
         color: var(--cor-fonte);
     }
@@ -1109,7 +1227,6 @@ body {
         justify-content: center;
         width: 100%;
         height: 100%;
-        /* height: 40vw; */
         gap: 1rem;
         padding: 6.25rem;
         background-color: var(--cor-secundaria);
@@ -1189,9 +1306,13 @@ body {
         color: var(--hover-fonte);
     }
 
-    /* rodape  */
 
-    .rodape {
+
+}
+
+/* rodape  */
+
+.rodape {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -1204,7 +1325,4 @@ body {
     background-color: var(--cor-rodape);
     color: var(--cor-fonte);
     }
-
-
-}
-
+    
