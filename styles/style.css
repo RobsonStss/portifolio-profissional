@@ -8,8 +8,9 @@
 
 body {
     font-family: var(--font);
+    color: var(--cor-fonte);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,8 +38,8 @@ body {
     --font: "Roboto", sans-serif;
 }
 
+@media (max-width: 599px) {
 
-@media (max-width: 430px) {
     /* menu */
 
     .menu {
@@ -159,7 +160,6 @@ body {
         height: 98px;
         border-radius: 50%;
         margin: 0px 15px;
-
     }
 
     /* sobre mim  */
@@ -169,7 +169,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
+        width: 90%;
         height: 320px;
         padding: 10px;
         background-color: var(--cor-secundaria);
@@ -402,10 +402,6 @@ body {
         gap: 16px;
     }
 
-    /* .formulario__paragrafo {
-        word-spacing: normal;
-    } */
-
     .formulario {
         display: flex;
         justify-content: space-around;
@@ -462,8 +458,275 @@ body {
 }
 
 
-@media (min-width: 834px) {
+@media (min-width: 600px) {
+
+    /* menu */
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        padding: 10px 0px;
+        background-color: var(--cor-primaria);
+        /* position: fixed; */
+        top: 0;
+    }
+
+    .menu__navegacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 19px 0px;
+        white-space: nowrap;
+    }
+
+    .menu__nome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* .menu__paragrago {
+        font-size: 22px;
+    } */
+
+    .menu__imagem {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* .menu__guia {
+        font-size: 32px;
+    } */
+
+    .menu__paragrago, .menu__guia {
+        text-decoration: none;
+        color: var(--cor-fonte);
+    }
+
+    .menu__guia:nth-child(1),
+    .menu__guia:nth-child(2),
+    .menu__guia:nth-child(3),
+    .menu__guia:nth-child(4),
+    .menu__guia:nth-child(5) {
+        display: none;
+    }
+
+    /* main  */
     
+    .main {
+        display: flex;
+        flex-direction: column;
+        /* overflow: hidden; */
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* apresentacao  */
+
+    .main__apresentacao {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       gap: 16px;
+       width: 100%;
+       height: 40vw;
+       background-color: var(--cor-primaria);
+    }
+
+    .apresentacao__conteudo {
+        display: flex;
+        flex-direction: column;
+        margin: 32px;
+        gap: 8px;
+        width: 90%;
+        
+    }
+
+    .apresentacao__titulo {
+        font-size: 22px;
+    }
+
+    .apresentacao__paragrafo {
+        font-size: 16px;
+    }
+
+    .apresentacao__links {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .links__redes {
+        display: flex;
+        gap: 2.5px;
+        color: var(--cor-fonte);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .links__imagem {
+        width: 16px;
+        height: 16px;
+    }
+
+    .main__imagem {
+        margin: 16px;
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
+    }
+
+    .formulario__imagem {
+        display: none;
+    }
+
+    /* sobre  */
+
+    .main__sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vw;
+        background-color: var(--cor-primaria);
+    }
+
+    .sobre__conteudo {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin: 32px;
+    }
+
+    /* skills  */
+
+    .main__skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+        height: 60vw;
+        background-color: var(--cor-secundaria);
+    }
+
+    .skills__titulo {
+        font-size: 22px;
+    }
+
+    .skills__conteudo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .skills__quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5px;
+        width: 118px;
+        height: 118px;
+        background-color: var(--cor-quadrado);
+    }
+
+    .quadrados__imagem {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* hobbies tablet  */
+
+    .main__hobbies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+        height: 50vw;
+        background-color: var(--cor-secundaria);
+    }
+
+    .hobbies__titulo {
+        font-size: 22px;
+    }
+
+    .hobbies {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .hobbies__quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5px;
+        width: 118px;
+        height: 118px;
+        background-color: var(--cor-quadrado);
+    }
+
+    /* formacao tablet  */
+
+    .main__formacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+        height: 50vw;
+        background-color: var(--cor-primaria);
+    }
+
+    .formacao__titulo {
+        font-size: 22px;
+    }
+
+    .formacao__conteudo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .formacao__quadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5px;
+        width: 224px;
+        height: 118px;
+        background-color: var(--cor-quadrado);
+    }
+
+    .formacao__imagem {
+        width: 100px;
+        height: 100px;
+    }
+
+    .projetos__imagem {
+        width: 146px;
+        height: 146px;
+    }
 }
 
 
