@@ -134,14 +134,22 @@
                         Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                         </div>
                         <label for="nome">Nome</label>
-                        <input class="formulario__input" type="text">
+                        <input class="formulario__input__nome" type="text">
+                        <div id="erroVazioNome">Nome é obrigatório</div>
+                        <div id="erroLimiteNome">Nome não pode conter mais de 50 letras</div>
                         <label for="e-mail">E-mail</label>
-                        <input class="formulario__input" type="text">
+                        <input class="formulario__input__email" type="text">
+                        <div id="erroVazioEmail">Email é obrigatório</div>
+                        <div id="erroLimiteEmail">Nome não pode conter mais de 50 letras</div>
                         <label for="assunto">Assunto</label>
-                        <input class="formulario__input" type="text">
+                        <input class="formulario__input__assunto" type="text">
+                        <div id="erroVazioAssunto">Assunto é obrigatório</div>
+                        <div id="erroLimiteAssunto">Nome não pode conter mais de 50 letras</div>
                         <label for="mensagem">Mensagem</label>
                         <textarea class="formulario__textare" name="mensagem"></textarea>
-                        <button class="formulario__botao">Enviar mensagem</button>
+                        <div id="erroVazioMensagem">Mensagem é obrigatório</div>
+                        <div id="erroLimiteMensagem">Nome não pode conter mais de 50 letras</div>
+                        <button onclick="enviar()" class="formulario__botao">Enviar mensagem</button>
                     </form>
                 </div>
             </div>
@@ -154,5 +162,7 @@
         <a href="https://www.linkedin.com/in/joserobsonsantos/" target="_blank"><img src="./assets/linkedin.png" alt="logo do linkedin"></a>
         <a href="https://github.com/RobsonStss" target="_blank"><img src="./assets/github.png" alt="logo do github"></a>
     </footer>
+
+    <script src="./js/app.js" defer></script>
 </body>
 </html>
