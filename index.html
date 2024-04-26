@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="formacao__quadrados">
-                    <img src="./assets/logo-alura.png" alt="logo da escola" class="formacao__imagem">
+                    <img src="./assets/alura-logo.jpg" alt="logo da escola" class="formacao__imagem">
                     <div class="formacao__descricao">
                         <h2 class="formacao__subtitulo">Formação Front End - Alura</h2>
                         <p class="formacao__paragrafo">Em andamento</p>
@@ -127,7 +127,7 @@
             </div>
             <div class="formulario__conteudo">
                 <div class="formulario">
-                    <form class="formulario__entrada">
+                    <form class="formulario__entrada" id="formulario__entrada">
                         <div class="conteudo__descricao">
                         <h1 class="formulario__titulo">Contato</h1>
                         <p class="formulario__paragrafo">Quer entrar em contato comigo?<br>
@@ -138,17 +138,17 @@
                         <div id="erroVazioNome">Nome é obrigatório</div>
                         <div id="erroLimiteNome">Nome não pode conter mais de 50 letras</div>
                         <label for="e-mail">E-mail</label>
-                        <input class="formulario__input__email" type="text">
+                        <input class="formulario__input__email" id="formulario__input__email" type="text">
                         <div id="erroVazioEmail">Email é obrigatório</div>
-                        <div id="erroLimiteEmail">Nome não pode conter mais de 50 letras</div>
+                        <div id="erroLimiteEmail">Email deve conter "abc@com"</div>
                         <label for="assunto">Assunto</label>
                         <input class="formulario__input__assunto" type="text">
                         <div id="erroVazioAssunto">Assunto é obrigatório</div>
-                        <div id="erroLimiteAssunto">Nome não pode conter mais de 50 letras</div>
+                        <div id="erroLimiteAssunto">Assunto não pode conter mais de 50 caracteres</div>
                         <label for="mensagem">Mensagem</label>
                         <textarea class="formulario__textare" name="mensagem"></textarea>
                         <div id="erroVazioMensagem">Mensagem é obrigatório</div>
-                        <div id="erroLimiteMensagem">Nome não pode conter mais de 50 letras</div>
+                        <div id="erroLimiteMensagem">Mensagem não pode conter mais de 300 caracteres</div>
                         <button onclick="enviar()" class="formulario__botao">Enviar mensagem</button>
                     </form>
                 </div>
